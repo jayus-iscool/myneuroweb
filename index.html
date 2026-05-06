@@ -18,12 +18,14 @@
       text-align: center;
     }
     
-ul.sidenav {
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   width: 400px;
   background-color: #003366;
+  position:fixed;
+  height: 100%;
 }
 
 li a {
@@ -32,9 +34,13 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
 }
-li a:hover {
+li a.active {
   background-color: white;
-  color:darkgrey;
+  color:black;
+}
+li a:hover {
+  background-color:darkslategrey;
+  color: white;
 }
 
 
@@ -92,11 +98,14 @@ li a:hover {
   </div>
 </section>
 
-<div class="sidenav">
+<ul>
+  <li><a class="active"
+  href="home">Home</a></li>
+
   <li><a href="#articles"></a></li>
-  <li><a href="home"></a></li>
+  <li><a href="funfacts"></a></li>
   <li><a href="#Research Data"></a></li>
-</div>
+</ul>
 
 <div class="main">
 </div>
