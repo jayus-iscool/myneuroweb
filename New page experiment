@@ -11,6 +11,17 @@
     <a href="https://jayus-iscool.github.io/myneuroweb/">myneuroweb</a>
     <a href="articles">articles</a>
 
+    <ol>
+        <li> list item number one</li>
+        <li> list item number two</li>
+        <li> lists are funnn??</li>
+    </ol>
+
+    <ul>
+        <li> now these are not numbered </li>
+        <li> this is still fun?</li>
+        <li> this is fun!</li>
+    </ul>
 
     </body>
 </html>
