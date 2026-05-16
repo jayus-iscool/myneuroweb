@@ -11,6 +11,18 @@ padding: 10px, 10px;
 text-align: left;
 }
 
+.sidenav {
+  display: none;
+  height: 100%;
+  width: 100px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: lightgray;
+  padding-top: 80px;
+}
 
 ul {
 vertical-align: top;
@@ -55,8 +67,9 @@ li a:hover {
     </section>
 </div>
 
-
-
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn"
+  onclick="closeNav()"> </a>
 <nav class="sidenav">
   <ul>
   <li><a href="index.html#about">About</a></li>
@@ -64,6 +77,18 @@ li a:hover {
   <li><a href="index.html#researchinfo">Research</a></li>
   </ul>
 </nav>
+</div>
+<span style="font-size: 30px; cursor: pointer;"
+onclick="openNav()">open</span>
+
+<script>
+  function openNav() {
+    document.getElementById ("mySidenav").style.display="block"; 
+  }
+    function closeNav() {
+      document.getElementById("mySidenav").style.display="none";
+    }
+</script>
 
 <section id="articles">
   <h2>Articles</h2>
